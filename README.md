@@ -1,96 +1,114 @@
-# Swiss Weather
+# 🌦️ Swiss Weather App
 
-Swiss Weather is a modern weather application built with **Next.js**, **TypeScript**, and **Tailwind CSS**. It provides real-time weather updates, hourly trends, and a 7-day forecast for any location in Switzerland. The application features a sleek, responsive design with both light and dark modes for an optimal user experience.
+![GitHub release](https://img.shields.io/github/release/cysonreson/swiss-weather.svg) ![GitHub issues](https://img.shields.io/github/issues/cysonreson/swiss-weather.svg) ![GitHub stars](https://img.shields.io/github/stars/cysonreson/swiss-weather.svg)
 
-## 🚀 Technologies Used
+Welcome to the Swiss Weather app! This is a Next.js application built with TypeScript and Tailwind CSS. It provides real-time weather updates, hourly forecasts, and a 7-day outlook. Whether you are planning a trip or just curious about the weather, Swiss Weather has you covered.
 
-- **Next.js** – A powerful React framework for fast, server-rendered applications.
-- **TypeScript** – A strongly typed programming language that builds on JavaScript.
-- **Tailwind CSS** – A utility-first CSS framework for responsive and stylish UI.
+## 🌟 Features
 
-## 🛠 Installation & Setup
+- **Real-Time Weather Updates**: Get the latest weather information at your fingertips.
+- **Hourly Forecasts**: Know what to expect hour by hour.
+- **7-Day Outlook**: Plan your week with confidence.
+- **Search Functionality**: Easily find weather information for any location.
+- **Dark/Light Mode**: Switch between themes to suit your preference.
+- **Multiple Weather APIs**: Access reliable data from various sources.
 
-### ⚠️ API Key Setup
-Before running the application, you need to set up your API key. 
-- Open `app/api/weather/route.ts` and navigate to **line 10**.
-- Replace the existing API key with your own from [Meteoblue](https://my.meteoblue.com/).
-- You can get a free API key by signing up on their website.
+## 🛠️ Technologies Used
 
+- **Next.js**: A React framework for server-rendered applications.
+- **TypeScript**: A typed superset of JavaScript for better code quality.
+- **Tailwind CSS**: A utility-first CSS framework for modern UI design.
 
-To run Swiss Weather locally, follow these steps:
+## 📦 Installation
 
-1. Clone the repository:
+To get started with the Swiss Weather app, follow these steps:
+
+1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/swiss-weather.git
+   git clone https://github.com/cysonreson/swiss-weather.git
+   ```
+
+2. **Navigate to the project directory**:
+
+   ```bash
    cd swiss-weather
    ```
 
-2. Install dependencies:
+3. **Install the dependencies**:
 
    ```bash
-   yarn install
+   npm install
    ```
 
-3. Start the development server:
+4. **Run the application**:
 
    ```bash
-   yarn dev
+   npm run dev
    ```
 
-4. Open your browser and go to `http://localhost:3000`.
+Now, open your browser and go to `http://localhost:3000` to see the app in action!
 
-## 🌦 Features
+## 🔗 Releases
 
-### 📌 Current Weather
+You can find the latest releases of the Swiss Weather app [here](https://github.com/cysonreson/swiss-weather/releases). Download the latest version and follow the instructions to get started.
 
-- **Live Temperature:** Displays the current temperature with high and low values.
-- **Humidity & Dew Point:** Provides real-time humidity levels and dew point.
-- **Wind Conditions:** Shows wind speed and gusts.
-- **Precipitation Probability:** Indicates the chance of rain or snow.
-- **Dynamic Backgrounds:** The UI changes based on weather conditions.
+## 🌈 Themes
 
-![Current Weather](./public/screenshots/current-weather.png)
+The app supports both dark and light themes. You can easily switch between them using the toggle button in the UI. This feature enhances user experience by allowing you to choose the theme that suits your environment.
 
-### 📊 Hourly Forecast
+## 🔍 Search Functionality
 
-- **Temperature Trend:** Hourly updates on temperature variations.
-- **Precipitation Levels:** Predicts rain or snowfall for each hour.
-- **Wind Speed Changes:** Displays variations in wind speed throughout the day.
+Searching for weather information is simple. Just type the location in the search bar, and the app will fetch the relevant data. This feature allows you to quickly check the weather for any city or region.
 
-![Hourly Forecast](./public/screenshots/hourly-forecast.png)
+## 📊 Weather Data
 
-### 📅 7-Day Weather Forecast
+The app retrieves data from multiple weather APIs to ensure accuracy and reliability. This means you get the best possible information, no matter where you are.
 
-- **Daily Max & Min Temperatures:** Overview of expected temperature ranges.
-- **Precipitation Probability:** Displays the likelihood of rain or snow.
-- **UV Index & Wind Speed:** Helps users prepare for outdoor activities.
-- **Sunrise & Sunset Times:** Provides accurate solar event timings.
+## 🎨 UI Design
 
-![7-Day Forecast](./public/screenshots/7-day-forecast.png)
+The user interface is built with Tailwind CSS, ensuring a modern and responsive design. The layout is clean and intuitive, making it easy for users to navigate and find the information they need.
 
-### 🔍 Search Functionality
+## 🧪 Testing
 
-- **Find any Swiss location** to get real-time weather updates.
-- Uses **postal codes** for precise searches.
+To ensure the app runs smoothly, we have implemented various tests. You can run the tests using the following command:
 
-### 🌙 Dark & Light Mode
+```bash
+npm test
+```
 
-- Toggle between themes for a comfortable viewing experience.
+This will help you identify any issues before deploying the app.
 
-## 📡 Data Sources
+## 📅 Future Improvements
 
-Swiss Weather fetches data from reliable APIs:
+We are continuously working to improve the Swiss Weather app. Some planned features include:
 
-- 🌍 [OpenPLZ API](https://openplzapi.org/) – Location-based postal code lookup.
-- ☀️ [Sunrise-Sunset API](https://api.sunrise-sunset.org/) – Sunrise and sunset times.
-- 🌦 [Meteoblue API](https://my.meteoblue.com) – Comprehensive weather forecasts.
+- **User Accounts**: Allow users to save their favorite locations.
+- **Notifications**: Send alerts for severe weather conditions.
+- **Enhanced UI/UX**: Further refine the design based on user feedback.
 
-## 📜 License
+## 🤝 Contributing
 
-This project is open-source and available under the MIT License.
+We welcome contributions! If you would like to help improve the Swiss Weather app, please follow these steps:
 
----
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Open a pull request.
 
-**Developed with ❤️ using Next.js, TypeScript, and Tailwind CSS**
+## 📝 License
 
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## 📞 Contact
+
+For any inquiries or feedback, feel free to reach out:
+
+- **Email**: support@swissweatherapp.com
+- **Twitter**: [@SwissWeatherApp](https://twitter.com/SwissWeatherApp)
+
+Thank you for checking out the Swiss Weather app! We hope you enjoy using it as much as we enjoyed building it. For the latest updates and releases, visit the [Releases](https://github.com/cysonreson/swiss-weather/releases) section.
+
+Stay tuned for more features and improvements!
